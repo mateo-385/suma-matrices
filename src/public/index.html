@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="matrizForm" action="">
+      <label for="filas">Filas:</label>
+      <input id="filas" type="number" />
+      <label for="columnas">Columnas:</label>
+      <input id="columnas" type="number" />
+      <button type="button" onclick="obtenerInputMatriz()">
+        Generar matrices
+      </button>
+    </form>
+
+    <div id="matrizInputs" style="display: none">
+      <h2>Matriz 1</h2>
+      <div id="matriz1Inputs"></div>
+
+      <h2>Matriz 2</h2>
+      <div id="matriz2Inputs"></div>
+
+      <button onclick="subirMatrices()">Sumar Matrices</button>
+    </div>
+
+    <h2>Resultado</h2>
+    <div id="resultado"></div>
+  </body>
+  <script src="index.js"></script>
+</html>
